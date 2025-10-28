@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\models\\bolsamexicanacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\models\\bolsamexicanacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\models\\casacambiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\models\\casacambiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\views\\bolsamexicana\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\views\\bolsamexicana\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\views\\bolsaamericana\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\views\\bolsaamericana\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\models\\bolsaamericanacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\models\\bolsaamericanacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|c:\\users\\mgomez\\source\\repos\\bolsavalores\\bolsavalores\\views\\casacambio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD009B6-097B-40DF-8090-D61AFCDAC28B}|BolsaValores\\BolsaValores.csproj|solutionrelative:bolsavalores\\views\\casacambio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "BolsaValores\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "BolsaValores\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T02:41:36.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BolsaValores\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BolsaValores\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T02:40:29.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\BolsaMexicana\\Index.cshtml",
+              "RelativeDocumentMoniker": "BolsaValores\\Views\\BolsaMexicana\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\BolsaMexicana\\Index.cshtml",
+              "RelativeToolTip": "BolsaValores\\Views\\BolsaMexicana\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T02:37:30.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BolsaMexicanaController.cs",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Models\\BolsaMexicanaController.cs",
+              "RelativeDocumentMoniker": "BolsaValores\\Models\\BolsaMexicanaController.cs",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Models\\BolsaMexicanaController.cs",
+              "RelativeToolTip": "BolsaValores\\Models\\BolsaMexicanaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:36:53.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\BolsaAmericana\\Index.cshtml",
+              "RelativeDocumentMoniker": "BolsaValores\\Views\\BolsaAmericana\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\BolsaAmericana\\Index.cshtml",
+              "RelativeToolTip": "BolsaValores\\Views\\BolsaAmericana\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T02:36:07.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BolsaAmericanaController.cs",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Models\\BolsaAmericanaController.cs",
+              "RelativeDocumentMoniker": "BolsaValores\\Models\\BolsaAmericanaController.cs",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Models\\BolsaAmericanaController.cs",
+              "RelativeToolTip": "BolsaValores\\Models\\BolsaAmericanaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:35:19.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\CasaCambio\\Index.cshtml",
+              "RelativeDocumentMoniker": "BolsaValores\\Views\\CasaCambio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\CasaCambio\\Index.cshtml",
+              "RelativeToolTip": "BolsaValores\\Views\\CasaCambio\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T02:34:53.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CasaCambioController.cs",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Models\\CasaCambioController.cs",
+              "RelativeDocumentMoniker": "BolsaValores\\Models\\CasaCambioController.cs",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Models\\CasaCambioController.cs",
+              "RelativeToolTip": "BolsaValores\\Models\\CasaCambioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:33:59.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BolsaValores\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BolsaValores\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T02:32:20.341Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
