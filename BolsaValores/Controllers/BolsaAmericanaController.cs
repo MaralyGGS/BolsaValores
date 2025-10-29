@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BolsaValores.Models
+namespace BolsaValores.Controllers
 {
-    public class CasaCambioController : Controller
+    public class BolsaAmericanaController : Controller
     {
-        // GET: CasaCambioController
+        // GET: BolsaAmericanaController
         public ActionResult Index()
         {
             return View();
         }
+
     }
 }

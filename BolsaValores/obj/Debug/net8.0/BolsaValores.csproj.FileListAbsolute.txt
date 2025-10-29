@@ -28,3 +28,7 @@ C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\obj\Debug\net8.0\refint\B
 C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\obj\Debug\net8.0\BolsaValores.pdb
 C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\obj\Debug\net8.0\BolsaValores.genruntimeconfig.cache
 C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\obj\Debug\net8.0\ref\BolsaValores.dll
+C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\obj\Debug\net8.0\BolsaValores.sourcelink.json
+C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\obj\Debug\net8.0\BolsaValores.csproj.AssemblyReference.cache
+C:\Users\mgomez\source\repos\BolsaValores\BolsaValores\obj\Debug\net8.0\BolsaVal.C73E186A.Up2Date

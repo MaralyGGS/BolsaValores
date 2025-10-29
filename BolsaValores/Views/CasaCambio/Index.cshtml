@@ -1,5 +1,103 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model BolsaValores.Controllers.CasaDeCambioViewModel
 @{
+    ViewData["Title"] = "Casa de Cambio";
+}
+
+<h2>Casa de Cambio</h2>
+<br />
+<div style="display: flex; gap: 20px;">
+    <!-- Tabla -->
+    <div style="flex: 1;">
+        <h3>Lista de Divisas</h3>
+        <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>Divisa</th>
+                    <th>Código</th>
+                    <th>Valor Actual</th>
+                    <th>Ver Gráfica</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var divisa in Model.Divisas)
+                {
+                    <tr>
+                        <td>@divisa.Nombre</td>
+                        <td>@divisa.Codigo</td>
+                        <td>@divisa.ValorActual</td>
+                        <td><a href="@Url.Action("Index", new { codigo = divisa.Codigo })">Ver</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <!-- Gráfica -->
+    <div style="flex: 1;">
+        <h3>Gráfica de @Model.DivisaSeleccionada.Nombre (@Model.DivisaSeleccionada.Codigo)</h3>
+        <div>
+            <button onclick="cambiarRango('dia')">Día</button>
+            <button onclick="cambiarRango('semana')">Semana</button>
+            <button onclick="cambiarRango('mes')">Mes</button>
+            <button onclick="cambiarRango('anio')">Año</button>
+        </div>
+        <canvas id="graficoDivisa" width="400" height="300"></canvas>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var valoresDia = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DivisaSeleccionada.ValoresDia));
+        var valoresSemana = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DivisaSeleccionada.ValoresSemana));
+        var valoresMes = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DivisaSeleccionada.ValoresMes));
+        var valoresAnio = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DivisaSeleccionada.ValoresAnio));
+
+        var rangoActual = "@Model.Rango";
+
+        var ctx = document.getElementById('graficoDivisa').getContext('2d');
+        var grafico = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: generarEtiquetas(rangoActual),
+                datasets: [{
+                    label: 'Valor',
+                    data: obtenerDatos(rangoActual),
+                    borderColor: 'blue',
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: { beginAtZero: false }
+                }
+            }
+        });
+
+        function cambiarRango(nuevoRango) {
+            rangoActual = nuevoRango;
+            grafico.data.labels = generarEtiquetas(nuevoRango);
+            grafico.data.datasets[0].data = obtenerDatos(nuevoRango);
+            grafico.update();
+        }
+
+        function obtenerDatos(rango) {
+            switch (rango) {
+                case 'dia': return valoresDia;
+                case 'semana': return valoresSemana;
+                case 'mes': return valoresMes;
+                case 'anio': return valoresAnio;
+                default: return valoresDia;
+            }
+        }
+
+        function generarEtiquetas(rango) {
+            switch (rango) {
+                case 'dia': return [...Array(valoresDia.length).keys()].map(i => (i + 1) + 'h');
+                case 'semana': return ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
+                case 'mes': return [...Array(valoresMes.length).keys()].map(i => 'Día ' + (i + 1));
+                case 'anio': return ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+                default: return [];
+            }
+        }
+    </script>
 }
