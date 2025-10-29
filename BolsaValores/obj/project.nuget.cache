@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/v4+st/R55U=",
+  "dgSpecHash": "4cYKgNw3wEw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mgomez\\source\\repos\\BolsaValores\\BolsaValores\\BolsaValores.csproj",
+  "projectFilePath": "C:\\Users\\luand\\OneDrive\\Documents\\rpeo\\BolsaValores\\BolsaValores\\BolsaValores.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mgomez\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+    "C:\\Users\\luand\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
   ],
   "logs": []
 }

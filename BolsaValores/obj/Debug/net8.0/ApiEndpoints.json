@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "ContainingType": "BolsaValores.Controllers.MarketController",
+    "Method": "Book",
+    "RelativePath": "api/market/book/{ticker}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticker",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BolsaValores.Controllers.MarketController",
+    "Method": "Stocks",
+    "RelativePath": "api/market/stocks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BolsaValores.Controllers.MarketController",
+    "Method": "Tape",
+    "RelativePath": "api/market/tape/{ticker}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticker",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BolsaValores.Controllers.OrdersController",
+    "Method": "Submit",
+    "RelativePath": "api/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BolsaValores.Controllers.OrdersController\u002BNewOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BolsaValores.Controllers.PortfolioController",
+    "Method": "Get",
+    "RelativePath": "api/portfolio/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

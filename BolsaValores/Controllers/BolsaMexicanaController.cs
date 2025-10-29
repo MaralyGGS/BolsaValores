@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace BolsaValores.Controllers
 {
     public class BolsaMexicanaController : Controller
     {
-        // GET: BolsaMexicanaController
-        public ActionResult Index()
+        public IActionResult Index()
         {
-            return View();
+            return View("Simulador");
         }
-
     }
 }

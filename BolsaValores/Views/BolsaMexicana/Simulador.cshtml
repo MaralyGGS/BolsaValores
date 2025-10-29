@@ -1,0 +1,211 @@
+﻿@{
+    ViewData["Title"] = "Simulador BMV";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3 text-center">📈 Simulador Bolsa Mexicana de Valores</h2>
+
+    <div class="row">
+        <!-- Tabla de emisoras -->
+        <div class="col-md-6">
+            <h5>Empresas de México</h5>
+            <table class="table table-hover table-sm" id="stocksTable">
+                <thead class="table-light">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Variación</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- Panel derecho: gráfico y operaciones -->
+        <div class="col-md-6">
+            <h5 id="chartTitle">Seleccione una acción</h5>
+            <canvas id="priceChart" height="200"></canvas>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h6 class="card-title">Operar</h6>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <select id="side" class="form-select">
+                                <option value="Buy">Comprar</option>
+                                <option value="Sell">Vender</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <input id="qty" type="number" class="form-control" value="100" placeholder="Cantidad">
+                        </div>
+                        <div class="col-4">
+                            <input id="price" type="number" class="form-control" step="0.01" placeholder="Precio">
+                        </div>
+                    </div>
+                    <div class="mt-2 text-end">
+                        <button id="sendOrder" class="btn btn-primary btn-sm">Enviar orden</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h6 class="card-title">Mi cartera</h6>
+                    <div id="portfolio"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    let stocks = [];
+    let selectedTicker = null;
+    let chart = null;
+
+    // ------------------ CARGAR EMISORAS ------------------
+    async function loadStocks() {
+        try {
+            const res = await fetch('/api/market/stocks');
+            if (!res.ok) throw new Error("Error al obtener acciones");
+            stocks = await res.json();
+
+            const tbody = document.querySelector('#stocksTable tbody');
+            tbody.innerHTML = '';
+
+            // Si no hay acciones, mostrar mensaje
+            if (!stocks || !stocks.length) {
+                tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted">No hay datos disponibles</td></tr>';
+                return;
+            }
+
+            // Cargar tabla
+            stocks.forEach(s => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${s.name}</td>
+                    <td>MX$${s.referencePrice.toFixed(2)}</td>
+                    <td class="text-muted">0.00%</td>
+                    <td>${new Date().toLocaleTimeString()}</td>
+                `;
+                tr.style.cursor = 'pointer';
+                tr.onclick = () => selectStock(s.ticker, s.name);
+                tbody.appendChild(tr);
+            });
+        } catch (err) {
+            console.error("Error cargando emisoras:", err);
+            const tbody = document.querySelector('#stocksTable tbody');
+            tbody.innerHTML = '<tr><td colspan="4" class="text-center text-danger">Error al cargar las acciones</td></tr>';
+        }
+    }
+
+    // ------------------ SELECCIONAR ACCIÓN ------------------
+    async function selectStock(ticker, name) {
+        selectedTicker = ticker;
+        document.getElementById('chartTitle').textContent = `${ticker} - ${name}`;
+        await updateChart();
+        await refreshPortfolio();
+    }
+
+    // ------------------ GENERAR DATOS SIMULADOS ------------------
+    function generateMockTrades(ticker, basePrice) {
+        const now = Date.now();
+        const trades = [];
+        let price = basePrice;
+        for (let i = 10; i >= 0; i--) {
+            price = price * (1 + (Math.random() - 0.5) / 50); // ±1%
+            trades.push({
+                timestamp: new Date(now - i * 60000).toISOString(),
+                price: parseFloat(price.toFixed(2))
+            });
+        }
+        return trades;
+    }
+
+    // ------------------ ACTUALIZAR GRÁFICO ------------------
+    async function updateChart() {
+        try {
+            const res = await fetch(`/api/market/tape/${selectedTicker}`);
+            let trades = await res.json();
+
+            // Si no hay transacciones reales, usa simuladas
+            if (!trades || !trades.length) {
+                const basePrice = stocks.find(s => s.ticker === selectedTicker)?.referencePrice || 0;
+                trades = generateMockTrades(selectedTicker, basePrice);
+            }
+
+            const labels = trades.map(t => new Date(t.timestamp).toLocaleTimeString());
+            const data = trades.map(t => t.price);
+
+            if (chart) chart.destroy();
+            chart = new Chart(document.getElementById('priceChart'), {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Precio MXN',
+                        data,
+                        borderColor: '#007bff',
+                        tension: 0.3,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: { display: false },
+                        y: { beginAtZero: false }
+                    }
+                }
+            });
+        } catch (err) {
+            console.error("Error actualizando gráfico:", err);
+        }
+    }
+
+    // ------------------ ENVIAR ORDEN ------------------
+    document.getElementById('sendOrder').onclick = async () => {
+        if (!selectedTicker) return alert('Selecciona una acción primero');
+        const side = document.getElementById('side').value;
+        const qty = parseInt(document.getElementById('qty').value);
+        const price = parseFloat(document.getElementById('price').value);
+
+        if (!price || price <= 0) return alert('Ingresa un precio válido');
+
+        const dto = { userId: 'demo', ticker: selectedTicker, side, type: 'Limit', price, quantity: qty };
+        await fetch('/api/orders', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dto)
+        });
+
+        await updateChart();
+        await refreshPortfolio();
+    };
+
+    // ------------------ MOSTRAR PORTAFOLIO ------------------
+    async function refreshPortfolio() {
+        const res = await fetch('/api/portfolio/demo');
+        const p = await res.json();
+
+        let html = `<p><strong>Saldo MXN:</strong> ${p.cashMXN.toFixed(2)}</p>`;
+        html += '<table class="table table-sm"><thead><tr><th>Ticker</th><th>Cantidad</th><th>Costo Promedio</th></tr></thead><tbody>';
+        for (const k in p.positions) {
+            const pos = p.positions[k];
+            html += `<tr><td>${k}</td><td>${pos.quantity}</td><td>${pos.avgCost.toFixed(2)}</td></tr>`;
+        }
+        html += '</tbody></table>';
+        document.getElementById('portfolio').innerHTML = html;
+    }
+
+    // ------------------ ACTUALIZAR CADA 5 SEGUNDOS ------------------
+    setInterval(() => {
+        if (selectedTicker) updateChart();
+    }, 5000);
+
+    // ------------------ INICIO ------------------
+    loadStocks();
+</script>
