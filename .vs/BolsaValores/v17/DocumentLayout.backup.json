@@ -122,8 +122,7 @@
               "RelativeToolTip": "BolsaValores\\Program.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwBcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:54:41.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:54:41.886Z"
             },
             {
               "$type": "Document",
@@ -148,8 +147,7 @@
               "RelativeToolTip": "BolsaValores\\Controllers\\PortfolioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:52:29.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:52:29.793Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "BolsaValores\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:52:10.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:52:10.704Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "BolsaValores\\Controllers\\MarketController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:51:48.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:51:48.467Z"
             },
             {
               "$type": "Document",
@@ -187,8 +183,7 @@
               "RelativeToolTip": "BolsaValores\\Data\\SeedData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:50:12.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:50:12.56Z"
             },
             {
               "$type": "Document",
@@ -200,8 +195,7 @@
               "RelativeToolTip": "BolsaValores\\Services\\MatchingEngine.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAIwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:49:33.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:49:33.231Z"
             },
             {
               "$type": "Document",
@@ -213,8 +207,7 @@
               "RelativeToolTip": "BolsaValores\\Services\\PortfolioService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:49:18.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:49:18.872Z"
             },
             {
               "$type": "Document",
@@ -226,8 +219,7 @@
               "RelativeToolTip": "BolsaValores\\Services\\MarketDataService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:48:55.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:48:55.383Z"
             },
             {
               "$type": "Document",
@@ -239,8 +231,7 @@
               "RelativeToolTip": "BolsaValores\\Services\\ClockService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:48:32.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:48:32.673Z"
             },
             {
               "$type": "Document",
@@ -252,8 +243,7 @@
               "RelativeToolTip": "BolsaValores\\Models\\Market\\Portfolio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:47:46.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:47:46.622Z"
             },
             {
               "$type": "Document",
@@ -265,8 +255,7 @@
               "RelativeToolTip": "BolsaValores\\Models\\Market\\OrderBook.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAuwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:47:24.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:47:24.431Z"
             },
             {
               "$type": "Document",
@@ -278,8 +267,7 @@
               "RelativeToolTip": "BolsaValores\\Models\\Market\\Trade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:47:06.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:47:06.067Z"
             },
             {
               "$type": "Document",
@@ -291,8 +279,7 @@
               "RelativeToolTip": "BolsaValores\\Models\\Market\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:46:49.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:46:49.153Z"
             },
             {
               "$type": "Document",
@@ -304,8 +291,7 @@
               "RelativeToolTip": "BolsaValores\\Models\\Market\\Stock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T01:46:17.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T01:46:17.857Z"
             },
             {
               "$type": "Document",
@@ -317,8 +303,7 @@
               "RelativeToolTip": "BolsaValores\\Models\\Divisa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:20:00.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T17:20:00.312Z"
             },
             {
               "$type": "Document",
@@ -342,8 +327,7 @@
               "RelativeToolTip": "BolsaValores\\Controllers\\BolsaMexicanaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T02:36:53.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T02:36:53.112Z"
             },
             {
               "$type": "Document",
